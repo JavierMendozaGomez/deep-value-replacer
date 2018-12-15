@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test of deep-replace-value: Changes the value of the key without case sensitive 1`] = `
+Object {
+  "PASSWORD": "REPLACED!",
+  "user": Object {
+    "email": "This is an email",
+    "passWorD": "REPLACED!",
+  },
+}
+`;
+
+exports[`Test of deep-replace-value: Subsitute simple key 1`] = `
+Object {
+  "key1": "REPLACED!",
+}
+`;
+
+exports[`Test of deep-replace-value: Substitute multiple times the value of the key without care how deeply is it 1`] = `
+Object {
+  "password": "REPLACED!",
+  "user": Object {
+    "email": "This is an email",
+    "password": "REPLACED!",
+  },
+}
+`;
+
+exports[`Test of deep-replace-value: Substitute nested keys 1`] = `
+Object {
+  "composedKey": Object {
+    "key1": "REPLACED!",
+    "key2": "This is the second string",
+  },
+}
+`;
