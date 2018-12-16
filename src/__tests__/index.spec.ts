@@ -1,4 +1,4 @@
-import * as depper from '../src/index'
+import * as depper from '../index'
 describe('Test of deep-replace-value:', () => {
     it('Subsitute simple key', () => {
         const simpleObject = {
